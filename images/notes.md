@@ -1,6 +1,6 @@
 # Klecks_201
 
-These are popular responses taken from the [Rorscharch website](https://www.rorschach.org/). There is a very [informative video](https://youtu.be/LYi19-Vx6go?si=7VHnOjkHGA58EkBt&t=6)too: 
+These are popular responses taken from the [Rorscharch website](https://www.rorschach.org/). There is a very [informative video](https://youtu.be/LYi19-Vx6go?si=7VHnOjkHGA58EkBt&t=6) too: 
 
 ## Blot 1:
 
