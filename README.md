@@ -35,12 +35,12 @@ Klecks is designed for individuals who prioritise mental health awareness, aimin
    - After the last inkblot, click "View Results."
    - Explore the chart displaying winning traits and fatal flaws:
      - Winning Traits:
-       - Creativity
-       - Resilience
-       - Diligence
+       - Creative
+       - Resilient
+       - Diligent
      - Fatal Flaws:
        - Self-Critical
-       - Perfectionist
+       - perfectionistic
        - Incorrigible
 
 3. **Save Data:**
