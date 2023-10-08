@@ -2,7 +2,7 @@
 
 ## Blot 1:
 
-**Bat, butterfly, moth**
+**Bat - butterfly - moth**
 
 ## Blot 2:
 
