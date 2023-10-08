@@ -6,6 +6,8 @@ These are popular responses taken from the Rorscharch website https://www.rorsch
 
 **Bat - butterfly - moth**
 
+This card is a relatively easy one in the series, with much of any asosciated stress in dealing with it being trying to understand how to conduct a new task.
+
 ## Blot 2:
 
 **Two humans - four-legged animal such as a dog**
