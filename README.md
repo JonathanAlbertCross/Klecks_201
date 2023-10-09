@@ -5,6 +5,7 @@
 Welcome to Klecks, your personal mental well-being companion that combines creativity, positivity, and self-awareness in a fun and engaging way!
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Features](#features)
 - [Usage](#usage)
@@ -27,6 +28,7 @@ Klecks is designed for individuals who prioritise mental health awareness, aimin
 ## Usage
 
 1. **Inkblot Exploration:**
+
    - Click on the inkblot to view options.
    - Rotate the image for a different perspective.
    - Use the button event to move to the next inkblot.
@@ -42,6 +44,30 @@ Klecks is designed for individuals who prioritise mental health awareness, aimin
        - Self-Critical
        - perfectionistic
        - Incorrigible
+
+**Blot 1**
+**Interpretation value**
+Bat - incorrigiable
+Butterfly - creative
+Moth - resiliant
+
+**Blot 2**
+**Interpretation value**
+Two humans - self critical
+Dog - diligent
+Cat - perfectionism
+
+**Blot 3**
+**Interpretation value**
+Elephant - resiliant
+Bear - incorrigiable
+Halloween - creative
+
+**Blot 4**
+**Interpretation value**
+Animal skin - resiliant
+Skin rug - incorrigiable
+dragon - creative
 
 3. **Save Data:**
    - User data is saved locally for future reference.
@@ -64,4 +90,3 @@ Contributions are welcome! If you have ideas for improvements or new features, f
 ## License
 
 This project is licensed under the [MIT License](LICENSE), so feel free to use and modify the code as you see fit. Happy exploring and monitoring your mental well-being!
-
