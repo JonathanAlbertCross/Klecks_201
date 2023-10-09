@@ -19,7 +19,7 @@ Klecks is designed for individuals who prioritise mental health awareness, aimin
 
 ## Features
 
-- **Interactive Inkblots:** Explore one inkblot at a time, each with its own set of options. Click on the image to skip to the next visual.
+- **Interactive Inkblots:** Explore one inkblot at a time, each with its own set of options. Click on the options to view to the next visual.
 - **Rotation:** Images are interactive and can be rotated for a more dynamic experience.
 - **User-Friendly Navigation:** A simple button event allows users to move seamlessly to the next inkblot.
 - **Results Page:** At the end, users can click the "View Results" button to access a chart displaying various traits.
