@@ -1,12 +1,12 @@
 const ctx = document.getElementById("myChart");
 const config = new Chart(ctx, {
-  type: 'radar',
+  type: "radar",
   data: data,
   options: {
     elements: {
       line: {
-        borderWidth: 3
-      }
-    }
+        borderWidth: 3,
+      },
+    },
   },
-};
+});
