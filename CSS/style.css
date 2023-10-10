@@ -6,6 +6,7 @@
   z-index: -1;
   background-size: contain;
   background-repeat: no-repeat;
+  margin: auto;
 }
 
 .rotate {
@@ -74,7 +75,7 @@ h1 {
   font-size: 100px;
   display: flex;
   justify-content: center;
-  padding: 150px 0px 0px 0px;
+  padding: 150px 0px 30px 0px;
   font-family: lora;
   font-weight: bold;
 }
@@ -92,18 +93,9 @@ h2 {
   justify-content: center;
   font-family: lora;
   font-weight: 600;
-  padding: 200px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
 }
 /* Additional styles for your content go here */
-
-.info {
-  font-size: 18;
-  display: flex;
-  justify-content: center;
-  padding: 5px 0px 0px;
-  font-family: lora;
-  font-weight: lighter;
-}
 
 #nameForm {
   display: flex;
@@ -118,5 +110,33 @@ h2 {
   justify-content: center;
   font-family: lora;
   font-weight: lighter;
-  padding: 50px 0px 10px;
+  margin: auto;
+  padding: 50px 100px 100px 50px;
+  word-spacing: 5px;
+  line-height: 30px;
+  text-align: center;
+}
+
+button {
+  border-color: #2196f3;
+  color: dodgerblue;
+  border: none;
+  font-family: lora;
+  font-weight: 500;
+  display: inline-block;
+
+  padding: 10px;
+}
+
+button:hover {
+  background: #2196f3;
+  color: white;
+}
+
+input {
+  font-family: lora;
+  font-weight: 500;
+  padding: 5px 30px 5px 80px;
+  border: 1px solid #676767;
+  color: #676767;
 }
