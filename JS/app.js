@@ -2,8 +2,11 @@
 // get form field
 const nameForm = document.getElementById("nameForm");
 const inkblotArea = document.querySelector("#inkblotarea");
+<<<<<<< HEAD
 const buttonArea = document.querySelector("#buttonarea");
 
+=======
+>>>>>>> 46730c7 (fixed conflict)
 nameForm.addEventListener("submit", function (event) {
   event.preventDefault();
   // set name
@@ -116,6 +119,7 @@ function updateContent() {
   console.log(currentlyDisplayedBlot);
   // show inkblot image in inkblotarea
 <<<<<<< HEAD
+<<<<<<< HEAD
   if (currentlyDisplayedBlot > 9) {
     showResults.classList.toggle("hidden");
     inkblotArea.classList.toggle("hidden");
@@ -131,6 +135,9 @@ function updateContent() {
     button3.textContent = `${blotList[currentlyDisplayedBlot].options[2][0]}`;
 =======
   const inkblotArea = document.querySelector("#inkblotarea");
+=======
+
+>>>>>>> 46730c7 (fixed conflict)
   inkblotArea.style.backgroundImage = `url("${blotList[currentlyDisplayedBlot].src}")`;
   // show options for current blot on buttons
   const button1 = document.querySelector("#button1");
@@ -208,8 +215,22 @@ skipButton.addEventListener("click", function () {
   updateContent();
 });
 
+<<<<<<< HEAD
 const rotateBtn = document.getElementById("rotateBtn");
 // rotate button event listener
 rotateBtn.addEventListener("click", function () {
   inkblotArea.classList.toggle("rotate");
 });
+=======
+function saveToLocalStorage() {
+  const userScoreStringified = JSON.stringify(userScore);
+  localStorage.setItem("userScoreFromLs", userScoreStringified);
+}
+
+const showResults = document.querySelector("#showResults");
+showResults.addEventListener("click", function () {
+  saveToLocalStorage();
+});
+
+
+>>>>>>> 46730c7 (fixed conflict)

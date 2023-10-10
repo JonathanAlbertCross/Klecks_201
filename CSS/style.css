@@ -1,4 +1,5 @@
 #inkblotarea {
+<<<<<<< HEAD
   min-height: 450px;
 
   z-index: -1;
@@ -12,6 +13,13 @@
 
 .hidden {
   display: none;
+=======
+  height: 300px;
+  width: 300px;
+  z-index: -1;
+  background-size: contain;
+  background-repeat: no-repeat;
+>>>>>>> 46730c7 (fixed conflict)
 }
 
 .rotate {
@@ -30,6 +38,7 @@
   100% {
     transform: rotate(360deg);
   }
+<<<<<<< HEAD
 }
 /* reset.css */
 /* Add your reset styles here */
@@ -106,4 +115,6 @@ button {
   border-color: #2196f3;
   color: dodgerblue;
   border: none;
+=======
+>>>>>>> 46730c7 (fixed conflict)
 }
