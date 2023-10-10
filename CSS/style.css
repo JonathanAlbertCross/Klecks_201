@@ -1,13 +1,9 @@
 #inkblotarea {
   min-height: 450px;
-
+  width: 50%;
   z-index: -1;
   background-size: contain;
   background-repeat: no-repeat;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
 
 .rotate {
@@ -93,13 +89,4 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 50px;
-}
-
-button {
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  border-color: #2196f3;
-  color: dodgerblue;
-  border: none;
 }
