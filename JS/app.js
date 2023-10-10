@@ -32,23 +32,72 @@ Blot.prototype.addToList = function () {
 
 // Creating the blots with options and scores, then adding them to the blotList
 const blot1 = new Blot("./images/blots/rorschach-blot-1.jpeg", [
-  ["chicken", [1, 0, 0, 0, 0, 0]],
-  ["penis", [0, 1, 0, 0, 0, 0]],
-  ["house", [0, 0, 1, 0, 0, 0]],
+  ["Bat", [1, 0, 1, 0, 0, 1]],
+  ["Butterfly", [0, 1, 0, 1, 1, 0]],
+  ["Moth", [0, 1, 1, 0, 1, 0]],
 ]);
 blot1.addToList();
 const blot2 = new Blot("./images/blots/rorschach-blot-2.jpeg", [
-  ["chicken2", [1, 0, 0, 0, 0, 0]],
-  ["penis2", [0, 1, 0, 0, 0, 0]],
-  ["house2", [0, 0, 1, 0, 0, 0]],
+  ["Humans", [1, 1, 0, 1, 0, 0]],
+  ["Animals", [0, 1, 1, 0, 0, 1]],
+  ["Airplane", [0, 0, 1, 0, 1, 1]],
 ]);
 blot2.addToList();
 const blot3 = new Blot("./images/blots/rorschach-blot-3.jpeg", [
-  ["chicken3", [1, 0, 0, 0, 0, 0]],
-  ["penis3", [0, 1, 0, 0, 0, 0]],
-  ["house3", [0, 0, 1, 0, 0, 0]],
+  ["Dancers", [1, 0, 1, 0, 0, 1]],
+  ["Rhino", [0, 1, 1, 1, 0, 0]],
+  ["Inkblot", [0, 1, 1, 0, 1, 0]],
 ]);
 blot3.addToList();
+
+const blot4 = new Blot("./images/blots/rorschach-blot-4.jpeg", [
+  ["Darth Vader", [1, 1, 1, 0, 0, 0]],
+  ["Rug", [0, 1, 0, 1, 0, 1]],
+  ["Cockroach", [1, 0, 1, 0, 1, 0]],
+]);
+blot4.addToList();
+
+const blot5 = new Blot("./images/blots/rorschach-blot-5.jpeg", [
+  ["Moth", [1, 0, 1, 1, 0, 0]],
+  ["Bird", [0, 1, 1, 0, 0, 1]],
+  ["Icarus", [1, 0, 1, 0, 1, 0]],
+]);
+blot5.addToList();
+
+const blot6 = new Blot("./images/blots/rorschach-blot-6.jpeg", [
+  ["Le Tour Eiffel", [1, 0, 1, 0, 1, 0]],
+  ["The Eye of Sauron", [0, 1, 0, 1, 0, 1]],
+  ["Anteater", [1, 0, 1, 0, 1, 0]],
+]);
+blot6.addToList();
+
+const blot7 = new Blot("./images/blots/rorschach-blot-7.jpeg", [
+  ["Rabbits", [1, 0, 1, 0, 0, 1]],
+  ["Face", [0, 1, 0, 1, 1, 0]],
+  ["Your Mum", [1, 0, 1, 0, 0, 1]],
+]);
+blot7.addToList();
+
+const blot8 = new Blot("./images/blots/rorschach-blot-8.jpeg", [
+  ["Blossom", [0, 0, 0, 1, 1, 1]],
+  ["Big Cat", [0, 1, 1, 0, 1, 0]],
+  ["Praying Mantis", [1, 0, 1, 0, 0, 1]],
+]);
+blot8.addToList();
+
+const blot9 = new Blot("./images/blots/rorschach-blot-9.jpeg", [
+  ["Desire", [0, 1, 1, 0, 0, 1]],
+  ["Human", [1, 1, 0, 0, 1, 0]],
+  ["Fire", [1, 0, 1, 1, 0, 0]],
+]);
+blot9.addToList();
+
+const blot10 = new Blot("./images/blots/rorschach-blot-10.jpeg", [
+  ["Daffodil", [0, 1, 0, 0, 1, 1]],
+  ["Wishbone", [0, 1, 0, 0, 0, 0]],
+  ["Crab", [1, 0, 1, 1, 0, 0]],
+]);
+blot10.addToList();
 
 // const userTraits = [
 //   "Creative",
@@ -118,7 +167,6 @@ button3.addEventListener("click", function () {
 // set image and buttontext for first round
 updateContent();
 
-
 function saveToLocalStorage() {
   const userScoreStringify = JSON.stringify(userScore);
   localStorage.setItem("userScoreFromLs", userScoreStringify);
@@ -141,5 +189,3 @@ skipButton.addEventListener("click", function () {
   // Update content with the next inkblot
   updateContent();
 });
-
-
