@@ -90,6 +90,8 @@ button1.addEventListener("click", function () {
   }
   //add 1 to current step
   currentlyDisplayedBlot++;
+  //
+  console.log("testing, testing 123");
   // show new image and buttontext
   updateContent();
 });
@@ -116,6 +118,7 @@ button3.addEventListener("click", function () {
 // set image and buttontext for first round
 updateContent();
 
+
 function saveToLocalStorage() {
   const userScoreStringify = JSON.stringify(userScore);
   localStorage.setItem("userScoreFromLs", userScoreStringify);
@@ -127,3 +130,16 @@ showResults.addEventListener("click", function () {
 });
 
 [0, 1, 0, 0, 0, 0];
+
+// Add a skip button
+const skipButton = document.getElementById("skipButton");
+
+// Skip button event listener
+skipButton.addEventListener("click", function () {
+  // Move to the next inkblot without adding scores
+  currentlyDisplayedBlot++;
+  // Update content with the next inkblot
+  updateContent();
+});
+
+
