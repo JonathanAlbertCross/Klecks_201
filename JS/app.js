@@ -1,6 +1,7 @@
 // asking for name with a form
 // get form field
 const nameForm = document.getElementById("nameForm");
+const inkblotArea = document.querySelector("#inkblotarea");
 nameForm.addEventListener("submit", function (event) {
   event.preventDefault();
   // set name
@@ -111,7 +112,7 @@ blot10.addToList();
 // Changing the image and buttontext
 function updateContent() {
   // show inkblot image in inkblotarea
-  const inkblotArea = document.querySelector("#inkblotarea");
+
   inkblotArea.style.backgroundImage = `url("${blotList[currentlyDisplayedBlot].src}")`;
   // show options for current blot on buttons
   const button1 = document.querySelector("#button1");
@@ -168,16 +169,14 @@ button3.addEventListener("click", function () {
 updateContent();
 
 function saveToLocalStorage() {
-  const userScoreStringify = JSON.stringify(userScore);
-  localStorage.setItem("userScoreFromLs", userScoreStringify);
+  const userScoreStringified = JSON.stringify(userScore);
+  localStorage.setItem("userScoreFromLs", userScoreStringified);
 }
 
 const showResults = document.querySelector("#showResults");
 showResults.addEventListener("click", function () {
   saveToLocalStorage();
 });
-
-[0, 1, 0, 0, 0, 0];
 
 // Add a skip button
 const skipButton = document.getElementById("skipButton");
@@ -188,4 +187,10 @@ skipButton.addEventListener("click", function () {
   currentlyDisplayedBlot++;
   // Update content with the next inkblot
   updateContent();
+});
+
+const rotateBtn = document.getElementById("rotateBtn");
+// rotate button event listener
+rotateBtn.addEventListener("click", function () {
+  inkblotArea.classList.toggle("rotate");
 });

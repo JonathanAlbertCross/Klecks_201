@@ -1,5 +1,25 @@
 #inkblotarea {
-  height: 500px;
-  width: 500px;
-  background-color: aqua;
+  height: 300px;
+  width: 300px;
+  z-index: -1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: relative;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

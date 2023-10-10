@@ -1,5 +1,7 @@
 //function renderChart ()
 
+const parsedUserScore = JSON.parse(localStorage.getItem("userScoreFromLs"));
+
 const data = {
   labels: [
     "Creative",
@@ -12,7 +14,7 @@ const data = {
   datasets: [
     {
       label: "Results",
-      data: [1, 2, 3, 4, 5, 6],
+      data: parsedUserScore,
       fill: true,
       backgroundColor: "rgba(255, 99, 132, 0.2)",
       borderColor: "rgb(255, 99, 132)",
