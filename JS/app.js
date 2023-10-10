@@ -11,7 +11,10 @@ nameForm.addEventListener("submit", function (event) {
   // get messageDiv in HTML
   const messageDiv = document.getElementById("messageDiv");
   // set messageDiv text
-  messageDiv.textContent = "Hi there, " + name + "!";
+  messageDiv.textContent =
+    "Hi there " +
+    name +
+    "! Welcome to the Klacks app, and thank you for agreeing to take the Rorschach test. The Rorschach test has been a key tool of psychoanalysis since its creation in 1921. It uses inkblot shapes to explore the patient's subconscious through projective associations, revealing what parts of your personality drives you and what parts sabotage you. Adapting the test for the digital age, we have designed it so that more people than ever are able to use this intuitive diagnostic, whilst also gaining more information about personality traits across the largest sample size yet taken by any psychological study. Simply see below to get started! ";
   // Reset the form
   nameForm.reset();
 });
