@@ -6,6 +6,10 @@
   background-repeat: no-repeat;
 }
 
+.hidden {
+  display: none;
+}
+
 .rotate {
   animation-name: rotate;
   animation-duration: 20s;
