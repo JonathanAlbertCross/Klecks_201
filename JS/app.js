@@ -3,15 +3,16 @@
 const nameForm = document.getElementById("nameForm");
 const inkblotArea = document.querySelector("#inkblotarea");
 const buttonArea = document.querySelector("#buttonarea");
+let userName = "my friend";
 
 nameForm.addEventListener("submit", function (event) {
   event.preventDefault();
   // set name
-  const name = document.getElementById("name").value;
+  userName = document.getElementById("name").value;
   // get messageDiv in HTML
   const messageDiv = document.getElementById("messageDiv");
   // set messageDiv text
-  messageDiv.textContent = "Hi there, " + name + "!";
+  messageDiv.textContent = "Hi there, " + userName + "!";
   // Reset the form
   nameForm.reset();
 });
@@ -173,12 +174,19 @@ updateContent();
 
 function saveToLocalStorage() {
   const userScoreStringified = JSON.stringify(userScore);
+  console.log("step 1");
   localStorage.setItem("userScoreFromLs", userScoreStringified);
+  console.log("step 2");
+  const userNameStringified = JSON.stringify(userName);
+  console.log("step 3");
+  localStorage.setItem("userNameFromLs", userNameStringified);
+  console.log("step 4");
 }
 
 const showResults = document.querySelector("#showResults");
 showResults.addEventListener("click", function () {
   saveToLocalStorage();
+  window.location = "./results.html";
 });
 
 // Add a skip button

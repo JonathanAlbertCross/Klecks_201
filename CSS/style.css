@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Blackphantom";
+  src: url("/CSS/blackphantom.otf") format("opentype");
+}
+
+h1,
+h2 {
+  font-family: Blackphantom;
+  color: rgb(196, 0, 141);
+  -webkit-text-fill-color: rgba(9, 1, 148, 0.5);
+  -webkit-text-stroke: 3px;
+  letter-spacing: 0.2rem;
+  text-transform: lowercase;
+}
+
 #inkblotarea {
   min-height: 450px;
 
