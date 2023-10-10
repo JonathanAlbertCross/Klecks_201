@@ -1,9 +1,13 @@
 #inkblotarea {
-  height: 300px;
-  width: 300px;
+  min-height: 450px;
+
   z-index: -1;
   background-size: contain;
   background-repeat: no-repeat;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .hidden {
@@ -26,4 +30,80 @@
   100% {
     transform: rotate(360deg);
   }
+}
+/* reset.css */
+/* Add your reset styles here */
+
+/* about.css */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+header img {
+  width: 50px; /* Adjust the size as needed */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+h2 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+/* Additional styles for your content go here */
+
+.info {
+  font-size: 18;
+  display: flex;
+  justify-content: center;
+  padding: 35px;
+}
+
+.subheading {
+  display: flex;
+  justify-content: center;
+}
+
+#nameForm {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-color: #2196f3;
+  color: dodgerblue;
+  border: none;
 }
