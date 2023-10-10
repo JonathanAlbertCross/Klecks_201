@@ -2,6 +2,8 @@
 // get form field
 const nameForm = document.getElementById("nameForm");
 const inkblotArea = document.querySelector("#inkblotarea");
+const buttonArea = document.querySelector("#buttonarea");
+
 nameForm.addEventListener("submit", function (event) {
   event.preventDefault();
   // set name
@@ -111,20 +113,21 @@ blot10.addToList();
 
 // Changing the image and buttontext
 function updateContent() {
+  console.log(currentlyDisplayedBlot);
   // show inkblot image in inkblotarea
-
-  inkblotArea.style.backgroundImage = `url("${blotList[currentlyDisplayedBlot].src}")`;
-  // show options for current blot on buttons
-  const button1 = document.querySelector("#button1");
-  button1.textContent = `${blotList[currentlyDisplayedBlot].options[0][0]}`;
-  const button2 = document.querySelector("#button2");
-  button2.textContent = `${blotList[currentlyDisplayedBlot].options[1][0]}`;
-  const button3 = document.querySelector("#button3");
-  button3.textContent = `${blotList[currentlyDisplayedBlot].options[2][0]}`;
-
-  //test - CHANGE AFTER (make invisible class/css)
-  if (currentlyDisplayedBlot === 2) {
-    showResults.classList.toggle("invisible");
+  if (currentlyDisplayedBlot > 9) {
+    showResults.classList.toggle("hidden");
+    inkblotArea.classList.toggle("hidden");
+    buttonArea.classList.toggle("hidden");
+  } else {
+    inkblotArea.style.backgroundImage = `url("${blotList[currentlyDisplayedBlot].src}")`;
+    // show options for current blot on buttons
+    const button1 = document.querySelector("#button1");
+    button1.textContent = `${blotList[currentlyDisplayedBlot].options[0][0]}`;
+    const button2 = document.querySelector("#button2");
+    button2.textContent = `${blotList[currentlyDisplayedBlot].options[1][0]}`;
+    const button3 = document.querySelector("#button3");
+    button3.textContent = `${blotList[currentlyDisplayedBlot].options[2][0]}`;
   }
 }
 

@@ -27,6 +27,15 @@ const data = {
 };
 const ctx = document.getElementById("myChart");
 const config = new Chart(ctx, {
+  options: {
+    scales: {
+      r: {
+        suggestedMin: 0,
+        suggestedMax: 10,
+      },
+    },
+  },
+
   type: "radar",
   data: data,
   options: {
