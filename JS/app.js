@@ -71,6 +71,11 @@ function updateContent() {
   button2.textContent = `${blotList[currentlyDisplayedBlot].options[1][0]}`;
   const button3 = document.querySelector("#button3");
   button3.textContent = `${blotList[currentlyDisplayedBlot].options[2][0]}`;
+
+  //test - CHANGE AFTER (make invisible class/css)
+  if (currentlyDisplayedBlot === 2) {
+    showResults.classList.toggle("invisible");
+  }
 }
 
 const skipbutton = document.querySelector("#skipbutton");
@@ -110,3 +115,15 @@ button3.addEventListener("click", function () {
 
 // set image and buttontext for first round
 updateContent();
+
+function saveToLocalStorage() {
+  const userScoreStringify = JSON.stringify(userScore);
+  localStorage.setItem("userScoreFromLs", userScoreStringify);
+}
+
+const showResults = document.querySelector("#showResults");
+showResults.addEventListener("click", function () {
+  saveToLocalStorage();
+});
+
+[0, 1, 0, 0, 0, 0];
