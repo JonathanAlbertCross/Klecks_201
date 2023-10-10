@@ -21,20 +21,25 @@
     </header>
     <main>
       <h1>KLECKS</h1>
-      <p class="subheading">The fun mental health tracking app.</p>
+      <p class="subheading">The fun mental health tracking app</p>
 
-      <form id="nameForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <button type="submit">Submit</button>
-      </form>
-      <div id="messageDiv"></div>
       <h2>THE TEST</h2>
 
       <p class="info">
-        Look at the image below, then pick the option underneath that best
-        matches your association
+        Kindly input your name and interpret what you see in a series of
+        inkblots by clicking on the the buttons below.
       </p>
+      <form id="nameForm">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          value="Enter your name"
+        />
+        <button type="submit">Start</button>
+      </form>
+      <div id="messageDiv"></div>
       <div id="inkblotarea"></div>
       <div id="buttonarea">
         <button id="button1"></button>
