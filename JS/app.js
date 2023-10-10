@@ -115,6 +115,7 @@ blot10.addToList();
 function updateContent() {
   console.log(currentlyDisplayedBlot);
   // show inkblot image in inkblotarea
+<<<<<<< HEAD
   if (currentlyDisplayedBlot > 9) {
     showResults.classList.toggle("hidden");
     inkblotArea.classList.toggle("hidden");
@@ -128,6 +129,21 @@ function updateContent() {
     button2.textContent = `${blotList[currentlyDisplayedBlot].options[1][0]}`;
     const button3 = document.querySelector("#button3");
     button3.textContent = `${blotList[currentlyDisplayedBlot].options[2][0]}`;
+=======
+  const inkblotArea = document.querySelector("#inkblotarea");
+  inkblotArea.style.backgroundImage = `url("${blotList[currentlyDisplayedBlot].src}")`;
+  // show options for current blot on buttons
+  const button1 = document.querySelector("#button1");
+  button1.textContent = `${blotList[currentlyDisplayedBlot].options[0][0]}`;
+  const button2 = document.querySelector("#button2");
+  button2.textContent = `${blotList[currentlyDisplayedBlot].options[1][0]}`;
+  const button3 = document.querySelector("#button3");
+  button3.textContent = `${blotList[currentlyDisplayedBlot].options[2][0]}`;
+
+  //test - CHANGE AFTER (make invisible class/css)
+  if (currentlyDisplayedBlot === 2) {
+    showResults.classList.toggle("invisible");
+>>>>>>> 8cc9a64 (fixed merge conflicts)
   }
 }
 

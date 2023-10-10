@@ -1,7 +1,10 @@
 //function renderChart ()
 
+<<<<<<< HEAD
 const parsedUserScore = JSON.parse(localStorage.getItem("userScoreFromLs"));
 
+=======
+>>>>>>> 8cc9a64 (fixed merge conflicts)
 const data = {
   labels: [
     "Creative",
@@ -14,7 +17,11 @@ const data = {
   datasets: [
     {
       label: "Results",
+<<<<<<< HEAD
       data: parsedUserScore,
+=======
+      data: [1, 2, 3, 4, 5, 6],
+>>>>>>> 8cc9a64 (fixed merge conflicts)
       fill: true,
       backgroundColor: "rgba(255, 99, 132, 0.2)",
       borderColor: "rgb(255, 99, 132)",
