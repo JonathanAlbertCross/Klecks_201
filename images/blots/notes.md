@@ -1,6 +1,6 @@
 # Klecks_201
 
-These are popular responses taken from the [Rorscharch website](https://www.rorschach.org/). There is a very [informative video](https://youtu.be/LYi19-Vx6go?si=7VHnOjkHGA58EkBt&t=6) too: 
+These are popular responses taken from the [Rorscharch website](https://www.rorschach.org/). There is a very [informative video](https://youtu.be/LYi19-Vx6go?si=7VHnOjkHGA58EkBt&t=6) too:
 
 ## Blot 1:
 
@@ -10,20 +10,20 @@ This card is a relatively easy one in the series, with much of any asosciated st
 
 ## Blot 2:
 
-**Two humans - four-legged animal such as a dog**
+**Two humans - dog - cat**
 
 Many subjects interpret the red as blood, which can display how the subject might respond to feelings of anger or physical harm. Some also associate the blood with power & have sexual responses to the card.
 two people.
 
 ## Blot 3:
 
-**Elephant - bear**
+**Elephant - bear - two humans**
 
 Responses to this card can show if people have struggles in managing social settings & how they interact with others.
 
 ## Blot 4:
 
-**animal hide - animal skin - skin rug**
+**animal skin - skin rug - dragon**
 
 The dark color of this blot can pose difficulty for depressed subjects. The "face" appears to be looking downward which makes it look like one is looking "up" at an imposing monster, to understand how one responds to authority. The card is often perceived as being associated with a male figure, which is why the card is often called "The Father Card."
 
