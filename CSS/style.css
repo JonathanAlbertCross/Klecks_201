@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Young+Serif&display=swap");
 
 #inkblotarea {
-  height: 600px;
-  width: 600px;
+  /* do not delete or change the proportions :) */
+  height: 462px;
+  width: 666px;
   z-index: -1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -26,10 +27,7 @@
     transform: rotate(360deg);
   }
 }
-/* reset.css */
-/* Add your reset styles here */
 
-/* about.css */
 body {
   margin: 0;
   font-family: lora;
@@ -45,7 +43,7 @@ header {
 }
 
 header img {
-  width: 50px; /* Adjust the size as needed */
+  width: 50px;
   font-family: lora;
   font-weight: lighter;
 }
@@ -95,7 +93,6 @@ h2 {
   font-weight: 600;
   padding: 100px 0px 0px 0px;
 }
-/* Additional styles for your content go here */
 
 #nameForm {
   display: flex;
@@ -124,7 +121,7 @@ button {
   font-family: lora;
   font-weight: 500;
   display: inline-block;
-
+  margin: 0rem 0rem 0rem 0.5rem;
   padding: 10px;
 }
 
