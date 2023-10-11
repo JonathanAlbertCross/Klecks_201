@@ -171,4 +171,5 @@ input {
 main {
   padding-bottom: 100px !important;
   min-height: 1025px;
+  background-size: cover;
 }
