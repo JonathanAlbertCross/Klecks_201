@@ -116,13 +116,28 @@ h2 {
 
 button {
   border-color: #2196f3;
-  color: dodgerblue;
+  color: rgb(0, 0, 0);
   border: none;
   font-family: lora;
   font-weight: 500;
   display: inline-block;
   margin: 0rem 0rem 0rem 0.5rem;
   padding: 10px;
+}
+
+#buttonarea {
+  display: flex;
+  justify-content: center;
+}
+
+#letsgo {
+  display: flex;
+  justify-content: center;
+}
+
+#showResults {
+  display: flex;
+  justify-content: center;
 }
 
 button:hover {
@@ -140,4 +155,23 @@ input {
 
 .hidden {
   display: none !important;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+footer a {
+  display: flex;
+  margin: 10px;
+  color: #fff;
+  margin-right: 15px;
+  font-family: lora;
+  font-weight: lighter;
+  text-decoration: none;
 }
