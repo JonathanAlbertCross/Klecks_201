@@ -43,7 +43,8 @@ header {
 }
 
 header img {
-  width: 50px;
+  max-width: 100%;
+  height: auto;
   font-family: lora;
   font-weight: lighter;
 }
@@ -128,16 +129,19 @@ button {
 #buttonarea {
   display: flex;
   justify-content: center;
+  padding: 15px;
 }
 
 #letsgo {
   display: flex;
   justify-content: center;
+  padding: 15px;
 }
 
 #showResults {
   display: flex;
   justify-content: center;
+  padding: 15px;
 }
 
 button:hover {
