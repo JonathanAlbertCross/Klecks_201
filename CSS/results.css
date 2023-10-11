@@ -116,11 +116,13 @@ canvas {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
   background-color: #333;
   color: #fff;
+  height: 80px;
+  letter-spacing: 1px;
 }
 
 footer a {
