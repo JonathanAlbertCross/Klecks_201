@@ -173,3 +173,12 @@ main {
   min-height: 1025px;
   background-size: cover;
 }
+
+h2 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: lora;
+  font-weight: 600;
+  padding: 10px 0px 10px 0px;
+}
