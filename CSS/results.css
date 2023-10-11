@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Young+Serif&display=swap");
+
+body {
+  margin: 0px auto 0px auto;
+  font-family: lora;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+header img {
+  width: 50px; /* Adjust the size as needed */
+  font-family: lora;
+  font-weight: lighter;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  font-family: lora;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+}
+
+nav li {
+  margin-right: 15px;
+  font-family: lora;
+  font-weight: lighter;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-family: lora;
+  font-weight: lighter;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 150px 0px 30px 0px;
+  font-family: lora;
+  font-weight: bold;
+}
+
+.subheading {
+  display: flex;
+  justify-content: center;
+  font-family: lora;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: lora;
+  font-weight: 600;
+  padding: 100px 0px 0px 0px;
+  margin-bottom: 30px;
+}
+
+button {
+  border-color: #2196f3;
+  color: dodgerblue;
+  border: none;
+  font-family: lora;
+  font-weight: 500;
+  display: inline-block;
+  padding: 10px;
+}
+
+button:hover {
+  background: #2196f3;
+  color: white;
+}
+
+canvas {
+  max-width: 800px;
+  max-height: 1000px;
+  margin-top: 30px;
+}
