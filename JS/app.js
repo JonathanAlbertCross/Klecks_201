@@ -191,7 +191,7 @@ const showResults = document.querySelector("#showResults");
 showResults.addEventListener("click", function () {
   saveToPastCharts();
   saveToLocalStorage();
-  window.location = "./results.html";
+  window.location = "./results.html#nodata";
 });
 
 function saveToPastCharts() {
