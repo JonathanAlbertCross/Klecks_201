@@ -2,13 +2,20 @@
 
 #inkblotarea {
   /* do not delete or change the proportions :) */
-  height: 462px;
-  width: 666px;
   z-index: -1;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: auto;
-  margin-top: 100px;
+  margin: 50px auto 10px auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  max-height: 800px;
+  background: radial-gradient(#2195f377, #9198e500);
+  border-radius: 100%;
+  align-items: center;
+}
+
+#inkblotarea img {
+  max-width: 750px;
+  max-height: 750px;
 }
 
 .rotate {

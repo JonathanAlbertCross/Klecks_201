@@ -1,7 +1,9 @@
 // asking for name with a form
 // get form field
+const headlinesDiv = document.querySelector("#headlines");
 const nameForm = document.getElementById("nameForm");
 const inkblotArea = document.querySelector("#inkblotarea");
+const inkblotImg = document.querySelector("#inkblotimg");
 const buttonArea = document.querySelector("#buttonarea");
 const letsGo = document.querySelector("#letsgo");
 let pastCharts = [];
@@ -25,7 +27,7 @@ nameForm.addEventListener("submit", function (event) {
   messageDiv.textContent =
     "Hi there " +
     newName +
-    "! Welcome to the Klecks app, and thank you for agreeing to take the Rorschach test. The Rorschach test has been a key tool of psychoanalysis since its creation in 1921. It uses inkblot shapes to explore the patient's subconscious through projective associations, revealing what parts of your personality drives you and what parts sabotage you. Adapting the test for the digital age, we have designed it so that more people than ever are able to use this intuitive diagnostic, whilst also gaining more information about personality traits across the largest sample size yet taken by any psychological study. Simply see below to get started! ";
+    "! Welcome to the Klecks app, and thank you for agreeing to take the Rorschach test. The Rorschach test has been a key tool of psychoanalysis since its creation in 1921. It uses inkblot shapes to explore the patient's subconscious through projective associations, revealing what parts of your personality drives you and what parts sabotage you. Adapting the test for the digital age, we have designed it so that more people than ever are able to use this intuitive diagnostic, whilst also gaining more information about personality traits across the largest sample size yet taken by any psychological study. Simply click the button to get started! ";
   // Reset the form
   nameForm.classList.toggle("hidden");
   letsGo.classList.toggle("hidden");
@@ -37,6 +39,7 @@ letsGo.addEventListener("click", function () {
   messageDiv.classList.toggle("hidden");
   letsGo.classList.toggle("hidden");
   window.location = "#inkblotarea";
+  headlinesDiv.style.visibility = "hidden";
 });
 
 // empty userScore and blotList for first round
@@ -57,68 +60,68 @@ Blot.prototype.addToList = function () {
 };
 
 // Creating the blots with options and scores, then adding them to the blotList
-const blot1 = new Blot("./images/blots/rorschach-blot-1.jpeg", [
+const blot1 = new Blot("./images/blots/blot1.png", [
   ["Bat", [1, 0, 1, 0, 0, 1]],
   ["Butterfly", [0, 1, 0, 1, 1, 0]],
   ["Moth", [0, 1, 1, 0, 1, 0]],
 ]);
 blot1.addToList();
-const blot2 = new Blot("./images/blots/rorschach-blot-2.jpeg", [
+const blot2 = new Blot("./images/blots/blot2.png", [
   ["Humans", [1, 1, 0, 1, 0, 0]],
   ["Animals", [0, 1, 1, 0, 0, 1]],
   ["Airplane", [0, 0, 1, 0, 1, 1]],
 ]);
 blot2.addToList();
-const blot3 = new Blot("./images/blots/rorschach-blot-3.jpeg", [
+const blot3 = new Blot("./images/blots/blot3.png", [
   ["Dancers", [1, 0, 1, 0, 0, 1]],
   ["Rhino", [0, 1, 1, 1, 0, 0]],
   ["Inkblot", [0, 1, 1, 0, 1, 0]],
 ]);
 blot3.addToList();
 
-const blot4 = new Blot("./images/blots/rorschach-blot-4.jpeg", [
+const blot4 = new Blot("./images/blots/blot4.png", [
   ["Darth Vader", [1, 1, 1, 0, 0, 0]],
   ["Rug", [0, 1, 0, 1, 0, 1]],
   ["Cockroach", [1, 0, 1, 0, 1, 0]],
 ]);
 blot4.addToList();
 
-const blot5 = new Blot("./images/blots/rorschach-blot-5.jpeg", [
+const blot5 = new Blot("./images/blots/blot5.png", [
   ["Moth", [1, 0, 1, 1, 0, 0]],
   ["Bird", [0, 1, 1, 0, 0, 1]],
   ["Icarus", [1, 0, 1, 0, 1, 0]],
 ]);
 blot5.addToList();
 
-const blot6 = new Blot("./images/blots/rorschach-blot-6.jpeg", [
+const blot6 = new Blot("./images/blots/blot6.png", [
   ["Le Tour Eiffel", [1, 0, 1, 0, 1, 0]],
   ["The Eye of Sauron", [0, 1, 0, 1, 0, 1]],
   ["Anteater", [1, 0, 1, 0, 1, 0]],
 ]);
 blot6.addToList();
 
-const blot7 = new Blot("./images/blots/rorschach-blot-7.jpeg", [
+const blot7 = new Blot("./images/blots/blot7.png", [
   ["Rabbits", [1, 0, 1, 0, 0, 1]],
   ["Face", [0, 1, 0, 1, 1, 0]],
   ["Your Mum", [1, 0, 1, 0, 0, 1]],
 ]);
 blot7.addToList();
 
-const blot8 = new Blot("./images/blots/rorschach-blot-8.jpeg", [
+const blot8 = new Blot("./images/blots/blot8.png", [
   ["Blossom", [0, 0, 0, 1, 1, 1]],
   ["Big Cat", [0, 1, 1, 0, 1, 0]],
   ["Praying Mantis", [1, 0, 1, 0, 0, 1]],
 ]);
 blot8.addToList();
 
-const blot9 = new Blot("./images/blots/rorschach-blot-9.jpeg", [
+const blot9 = new Blot("./images/blots/blot9.png", [
   ["Desire", [0, 1, 1, 0, 0, 1]],
   ["Human", [1, 1, 0, 0, 1, 0]],
   ["Fire", [1, 0, 1, 1, 0, 0]],
 ]);
 blot9.addToList();
 
-const blot10 = new Blot("./images/blots/rorschach-blot-10.jpeg", [
+const blot10 = new Blot("./images/blots/blot10.png", [
   ["Daffodil", [0, 1, 0, 0, 1, 1]],
   ["Wishbone", [0, 1, 0, 0, 0, 0]],
   ["Crab", [1, 0, 1, 1, 0, 0]],
@@ -135,7 +138,7 @@ function updateContent() {
     buttonArea.classList.toggle("hidden");
     window.location = "#h1";
   } else {
-    inkblotArea.style.backgroundImage = `url("${blotList[currentlyDisplayedBlot].src}")`;
+    inkblotImg.src = blotList[currentlyDisplayedBlot].src;
     // show options for current blot on buttons
     const button1 = document.querySelector("#button1");
     button1.textContent = `${blotList[currentlyDisplayedBlot].options[0][0]}`;
@@ -223,5 +226,5 @@ skipButton.addEventListener("click", function () {
 const rotateBtn = document.getElementById("rotateBtn");
 // rotate button event listener
 rotateBtn.addEventListener("click", function () {
-  inkblotArea.classList.toggle("rotate");
+  inkblotImg.classList.toggle("rotate");
 });
