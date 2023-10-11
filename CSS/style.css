@@ -32,6 +32,11 @@ body {
   margin: 0;
   font-family: lora;
 }
+main {
+  background-image: url("../images/background.jpeg");
+  z-index: 0;
+  position: relative;
+}
 
 header {
   display: flex;

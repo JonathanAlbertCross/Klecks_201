@@ -25,7 +25,6 @@ for (i = 0; i < pastCharts.length; i++) {
   dataSetsList.push({
     label: pastUsers[i],
     data: pastCharts[i],
-    fill: true,
   });
 }
 
