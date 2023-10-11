@@ -40,6 +40,7 @@ letsGo.addEventListener("click", function () {
   letsGo.classList.toggle("hidden");
   window.location = "#inkblotarea";
   headlinesDiv.style.visibility = "hidden";
+  headlinesDiv.style.maxHeight = "50px";
 });
 
 // empty userScore and blotList for first round
@@ -149,8 +150,6 @@ function updateContent() {
   }
 }
 
-const skipbutton = document.querySelector("#skipbutton");
-
 // what happens when clicking on buttons
 // button 1
 button1.addEventListener("click", function () {
@@ -227,4 +226,9 @@ const rotateBtn = document.getElementById("rotateBtn");
 // rotate button event listener
 rotateBtn.addEventListener("click", function () {
   inkblotImg.classList.toggle("rotate");
+  if (rotateBtn.textContent === "Rotate image") {
+    rotateBtn.textContent = "Stop rotating";
+  } else if (rotateBtn.textContent === "Stop rotating") {
+    rotateBtn.textContent = "Rotate image";
+  }
 });

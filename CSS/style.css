@@ -6,16 +6,17 @@
   margin: 50px auto 10px auto;
   display: flex;
   flex-direction: column;
-  max-width: 800px;
-  max-height: 800px;
+  max-width: 600px;
+  max-height: 600px;
   background: radial-gradient(#2195f377, #9198e500);
   border-radius: 100%;
   align-items: center;
+  border: 1px solid #2196f3;
 }
 
 #inkblotarea img {
-  max-width: 750px;
-  max-height: 750px;
+  max-width: 550px;
+  max-height: 550px;
 }
 
 .rotate {
@@ -110,15 +111,6 @@ h1 {
   font-family: lora;
   font-weight: 500;
   color: #333;
-}
-
-h2 {
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  font-family: lora;
-  font-weight: 600;
-  padding: 100px 0px 0px 0px;
 }
 
 #nameForm {
