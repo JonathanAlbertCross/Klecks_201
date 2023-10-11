@@ -17,3 +17,8 @@ header img {
   font-family: lora;
   font-weight: lighter;
 }
+
+main {
+  background-image: url("../images/background.jpeg");
+  z-index: -2;
+}
