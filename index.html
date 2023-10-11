@@ -13,7 +13,7 @@
       <img src="./images/logo.png" alt="Klecks logo" />
       <nav>
         <ul>
-          <li><a href="#inkblotarea">Test</a></li>
+          <li><a href="./#inkblotarea">Test</a></li>
           <li><a href="./results.html">Results</a></li>
           <li><a href="./about.html">About Us</a></li>
         </ul>
@@ -31,13 +31,14 @@
           id="name"
           name="name"
           required
-          value="Enter your name"
+          placeholder="Enter your name"
         />
         <button type="submit">Start</button>
       </form>
       <div id="messageDiv"></div>
-      <div id="inkblotarea"></div>
-      <div id="buttonarea">
+      <div id="letsgo" class="hidden"><button>Let's get started!</button></div>
+      <div id="inkblotarea" class="hidden"></div>
+      <div id="buttonarea" class="hidden">
         <button id="button1"></button>
         <button id="button2"></button>
         <button id="button3"></button>
@@ -45,11 +46,9 @@
         <div><button id="skipButton">Skip</button></div>
       </div>
 
-      <a href="results.html"
-        ><div id="showResults" class="hidden">
-          <button>Show results</button>
-        </div></a
-      >
+      <div id="showResults" class="hidden">
+        <button>Show results</button>
+      </div>
     </main>
     <footer>this is our footer</footer>
   </body>
