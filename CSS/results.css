@@ -34,7 +34,6 @@ footer {
 }
 
 header img {
-  width: 50px; /* Adjust the size as needed */
   font-family: lora;
   font-weight: lighter;
 }
@@ -65,7 +64,7 @@ main {
   flex-direction: column;
   align-items: center;
   background-image: url("../images/background.jpeg");
-  z-index: -2;
+  z-index: auto;
 }
 
 h1 {
@@ -117,11 +116,13 @@ canvas {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
   background-color: #333;
   color: #fff;
+  height: 80px;
+  letter-spacing: 1px;
 }
 
 footer a {
