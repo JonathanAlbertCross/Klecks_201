@@ -49,6 +49,11 @@ The minds behind Klecks:
 
 **Scope:** Illuminate personality traits and characteristics derived from individual interpretations of inkblot images.
 
+**Providing Insights into Personality Traits:**
+
+Offering insights into an individual's personality traits and characteristics based on their unique interpretations of the inkblot images.
+Implementation Challenges:
+
 ### Usage
 
 **Navigate Thoughtfully**

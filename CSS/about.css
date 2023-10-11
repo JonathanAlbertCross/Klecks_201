@@ -1,31 +1,21 @@
-#button1 {
-  background-color: #c5b0d8;
-  color: white;
-  font-family: monospace;
+body {
+  margin: 0;
+  font-family: lora;
 }
 
-#button2 {
-  background-color: #c5b0d8;
-  color: white;
-  font-family: monospace;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
 }
 
-#button3 {
-  background-color: #c5b0d8;
-  color: white;
-  font-family: monospace;
-}
-
-#skipbutton {
-  background-color: #c5b0d8;
-  color: white;
-  font-family: monospace;
-}
-
-#showResults {
-  background-color: #c5b0d8;
-  color: white;
-  font-family: monospace;
+header img {
+  width: 50px;
+  font-family: lora;
+  font-weight: lighter;
 }
 
 header {
