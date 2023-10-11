@@ -47,6 +47,17 @@ header {
   color: #fff;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #333;
+  color: #fff;
+  height: 80px;
+  letter-spacing: 1px;
+}
+
 header img {
   max-width: 100%;
   height: auto;
@@ -82,6 +93,7 @@ h1 {
   padding: 150px 0px 30px 0px;
   font-family: lora;
   font-weight: bold;
+  color: #333;
 }
 
 .subheading {
@@ -89,6 +101,7 @@ h1 {
   justify-content: center;
   font-family: lora;
   font-weight: 500;
+  color: #333;
 }
 
 h2 {
