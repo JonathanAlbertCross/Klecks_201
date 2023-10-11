@@ -1,8 +1,30 @@
-//function renderChart ()
-
 const parsedUserScore = JSON.parse(localStorage.getItem("userScoreFromLs"));
+const parsedUserName = JSON.parse(localStorage.getItem("newNameFromLs"));
+pastCharts = JSON.parse(localStorage.getItem("pastChartsFromLs"));
+pastUsers = JSON.parse(localStorage.getItem("pastUsersFromLs"));
+const ctx = document.getElementById("myChart");
+let dataSetsList = [];
+const backBtn = document.querySelector("#backBtn");
+const resetBtn = document.querySelector("#resetBtn");
+backBtn.addEventListener("click", function () {
+  window.location = "./";
+});
+if (!pastCharts) {
+  const noData = document.querySelector("#nodata");
+  noData.textContent = "No data yet, please finish your test first!";
+}
+resetBtn.addEventListener("click", function () {
+  localStorage.clear();
+  window.location = "./";
+});
+for (i = 0; i < pastCharts.length; i++) {
+  dataSetsList.push({
+    label: pastUsers[i],
+    data: pastCharts[i],
+  });
+}
 
-const data = {
+let data = {
   labels: [
     "Creative",
     "Resilient",
@@ -11,21 +33,8 @@ const data = {
     "Perfectionist",
     "Incorrigible",
   ],
-  datasets: [
-    {
-      label: "Results",
-      data: parsedUserScore,
-      fill: true,
-      backgroundColor: "rgba(255, 99, 132, 0.2)",
-      borderColor: "rgb(255, 99, 132)",
-      pointBackgroundColor: "rgb(255, 99, 132)",
-      pointBorderColor: "#fff",
-      pointHoverBackgroundColor: "#fff",
-      pointHoverBorderColor: "rgb(255, 99, 132)",
-    },
-  ],
+  datasets: dataSetsList,
 };
-const ctx = document.getElementById("myChart");
 const config = new Chart(ctx, {
   type: "radar",
   data: data,
