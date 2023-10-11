@@ -149,6 +149,19 @@ button {
   display: flex;
   justify-content: center;
   padding: 15px;
+  flex-direction: column;
+  align-items: center;
+  width: 666px;
+  margin: 0px auto;
+}
+
+#buttonarea div {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #letsgo {
