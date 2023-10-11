@@ -181,22 +181,3 @@ input {
 .hidden {
   display: none !important;
 }
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-}
-
-footer a {
-  display: flex;
-  margin: 10px;
-  color: #fff;
-  margin-right: 15px;
-  font-family: lora;
-  font-weight: lighter;
-  text-decoration: none;
-}
