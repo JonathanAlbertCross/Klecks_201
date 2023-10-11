@@ -122,3 +122,47 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Young+Serif&display=swap");
+
+header img {
+  width: 70px;
+}
+
+h1 {
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 150px 0px 30px 0px;
+  font-family: lora;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  padding-top: 100px;
+}
+
+footer a {
+  display: flex;
+  margin: 10px;
+  color: #fff;
+  margin-right: 15px;
+  font-family: lora;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+button,
+input {
+  border: 1px solid #2196f3 !important;
+  border-radius: 15px;
+  color: #333 !important;
+}

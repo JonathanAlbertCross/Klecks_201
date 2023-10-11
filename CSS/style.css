@@ -8,6 +8,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin: auto;
+  margin-top: 100px;
 }
 
 .rotate {
@@ -127,7 +128,7 @@ h2 {
   font-family: lora;
   font-weight: lighter;
   margin: auto;
-  padding: 50px 100px 100px 50px;
+  padding: 50px 100px 10px 50px;
   word-spacing: 5px;
   line-height: 30px;
   text-align: center;
@@ -160,6 +161,8 @@ button {
   display: flex;
   justify-content: center;
   padding: 15px;
+  flex-direction: column;
+  align-items: center;
 }
 
 button:hover {
@@ -177,23 +180,4 @@ input {
 
 .hidden {
   display: none !important;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-}
-
-footer a {
-  display: flex;
-  margin: 10px;
-  color: #fff;
-  margin-right: 15px;
-  font-family: lora;
-  font-weight: lighter;
-  text-decoration: none;
 }
