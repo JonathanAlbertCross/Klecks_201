@@ -165,6 +165,7 @@ input {
   border: 1px solid #2196f3 !important;
   border-radius: 15px;
   color: #333 !important;
+  min-width: 120px;
 }
 
 main {
