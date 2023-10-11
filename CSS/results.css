@@ -133,3 +133,12 @@ footer a {
   font-weight: lighter;
   text-decoration: none;
 }
+
+#resultDiv {
+  margin: 10px 10px 10px 10px;
+  padding: 20px;
+  font-family: lora;
+  font-style: italic;
+  line-height: 20px;
+  text-align: center;
+}
