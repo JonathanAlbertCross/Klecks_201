@@ -36,6 +36,7 @@ letsGo.addEventListener("click", function () {
   buttonArea.classList.toggle("hidden");
   messageDiv.classList.toggle("hidden");
   letsGo.classList.toggle("hidden");
+  window.location = "#inkblotarea";
 });
 
 // empty userScore and blotList for first round
@@ -132,6 +133,7 @@ function updateContent() {
     showResults.classList.toggle("hidden");
     inkblotArea.classList.toggle("hidden");
     buttonArea.classList.toggle("hidden");
+    window.location = "#h1";
   } else {
     inkblotArea.style.backgroundImage = `url("${blotList[currentlyDisplayedBlot].src}")`;
     // show options for current blot on buttons
