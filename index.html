@@ -13,7 +13,7 @@
       <img src="./images/logo.png" alt="Klecks logo" />
       <nav>
         <ul>
-          <li><a href="#inkblotarea">Test</a></li>
+          <li><a href="./#inkblotarea">Test</a></li>
           <li><a href="./results.html">Results</a></li>
           <li><a href="./about.html">About Us</a></li>
         </ul>
@@ -21,34 +21,34 @@
     </header>
     <main>
       <h1>KLECKS</h1>
-      <p class="subheading">The fun mental health tracking app.</p>
+      <p class="subheading">Explore Your Subconscious with Our App</p>
+
+      <h2></h2>
 
       <form id="nameForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <button type="submit">Submit</button>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Enter your name"
+        />
+        <button type="submit">Start</button>
       </form>
       <div id="messageDiv"></div>
-      <h2>THE TEST</h2>
-
-      <p class="info">
-        Look at the image below, then pick the option underneath that best
-        matches your association
-      </p>
-      <div id="inkblotarea"></div>
-      <div id="buttonarea">
+      <div id="letsgo" class="hidden"><button>Let's get started!</button></div>
+      <div id="inkblotarea" class="hidden"></div>
+      <div id="buttonarea" class="hidden">
         <button id="button1"></button>
         <button id="button2"></button>
         <button id="button3"></button>
         <button id="rotateBtn">Rotate image</button>
         <div><button id="skipButton">Skip</button></div>
       </div>
-
-      <div id="showResults"><button>Show results</button></div>
-
-
-      <button id="rotateBtn">Rotate image</button>
-      
+     
+      <div id="showResults" class="hidden">
+        <button>Show results</button>
+      </div>
     </main>
     <footer>this is our footer</footer>
   </body>

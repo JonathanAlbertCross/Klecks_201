@@ -3,17 +3,39 @@
 const nameForm = document.getElementById("nameForm");
 const inkblotArea = document.querySelector("#inkblotarea");
 const buttonArea = document.querySelector("#buttonarea");
+const letsGo = document.querySelector("#letsgo");
+let pastCharts = [];
+let pastUsers = [];
+let newName;
+
+// get pastUsers from Localstorage
+if (localStorage.getItem("pastChartsFromLs")) {
+  pastCharts = JSON.parse(localStorage.getItem("pastChartsFromLs"));
+  pastUsers = JSON.parse(localStorage.getItem("pastUsersFromLs"));
+}
 
 nameForm.addEventListener("submit", function (event) {
   event.preventDefault();
+  newName = document.getElementById("name").value;
+
   // set name
-  const name = document.getElementById("name").value;
   // get messageDiv in HTML
   const messageDiv = document.getElementById("messageDiv");
   // set messageDiv text
-  messageDiv.textContent = "Hi there, " + name + "!";
+  messageDiv.textContent =
+    "Hi there " +
+    newName +
+    "! Welcome to the Klacks app, and thank you for agreeing to take the Rorschach test. The Rorschach test has been a key tool of psychoanalysis since its creation in 1921. It uses inkblot shapes to explore the patient's subconscious through projective associations, revealing what parts of your personality drives you and what parts sabotage you. Adapting the test for the digital age, we have designed it so that more people than ever are able to use this intuitive diagnostic, whilst also gaining more information about personality traits across the largest sample size yet taken by any psychological study. Simply see below to get started! ";
   // Reset the form
-  nameForm.reset();
+  nameForm.classList.toggle("hidden");
+  letsGo.classList.toggle("hidden");
+});
+
+letsGo.addEventListener("click", function () {
+  inkblotArea.classList.toggle("hidden");
+  buttonArea.classList.toggle("hidden");
+  messageDiv.classList.toggle("hidden");
+  letsGo.classList.toggle("hidden");
 });
 
 // empty userScore and blotList for first round
@@ -102,15 +124,6 @@ const blot10 = new Blot("./images/blots/rorschach-blot-10.jpeg", [
 ]);
 blot10.addToList();
 
-// const userTraits = [
-//   "Creative",
-//   "Resilient",
-//   "Diligent",
-//   "Self-Critical",
-//   "Perfectionistic",
-//   "Incorrigible",
-// ];
-
 // Changing the image and buttontext
 function updateContent() {
   console.log(currentlyDisplayedBlot);
@@ -172,15 +185,28 @@ button3.addEventListener("click", function () {
 // set image and buttontext for first round
 updateContent();
 
+// whap happens when clicking on the show results button
+const showResults = document.querySelector("#showResults");
+showResults.addEventListener("click", function () {
+  saveToPastCharts();
+  saveToLocalStorage();
+  window.location = "./results.html";
+});
+
+function saveToPastCharts() {
+  pastCharts.push(userScore);
+  pastUsers.push(newName);
+}
 function saveToLocalStorage() {
   const userScoreStringified = JSON.stringify(userScore);
   localStorage.setItem("userScoreFromLs", userScoreStringified);
+  const newNameStringified = JSON.stringify(newName);
+  localStorage.setItem("newNameFromLs", newNameStringified);
+  const pastChartsStringified = JSON.stringify(pastCharts);
+  localStorage.setItem("pastChartsFromLs", pastChartsStringified);
+  const pastUsersStringified = JSON.stringify(pastUsers);
+  localStorage.setItem("pastUsersFromLs", pastUsersStringified);
 }
-
-const showResults = document.querySelector("#showResults");
-showResults.addEventListener("click", function () {
-  saveToLocalStorage();
-});
 
 // Add a skip button
 const skipButton = document.getElementById("skipButton");

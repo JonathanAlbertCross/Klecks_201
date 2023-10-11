@@ -1,16 +1,19 @@
-//function renderChart ()
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 const parsedUserScore = JSON.parse(localStorage.getItem("userScoreFromLs"));
+pastCharts = JSON.parse(localStorage.getItem("pastChartsFromLs"));
+pastUsers = JSON.parse(localStorage.getItem("pastUsersFromLs"));
+const ctx = document.getElementById("myChart");
+let dataSetsList = [];
 
-=======
->>>>>>> 8cc9a64 (fixed merge conflicts)
-=======
-const parsedUserScore = JSON.parse(localStorage.getItem("userScoreFromLs"));
+for (i = 0; i < pastCharts.length; i++) {
+  dataSetsList.push({
+    label: pastUsers[i],
+    data: pastCharts[i],
+    fill: true,
+  });
+}
 
->>>>>>> 46730c7 (fixed conflict)
-const data = {
+let data = {
+  
   labels: [
     "Creative",
     "Resilient",
@@ -19,29 +22,10 @@ const data = {
     "Perfectionist",
     "Incorrigible",
   ],
-  datasets: [
-    {
-      label: "Results",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      data: parsedUserScore,
-=======
-      data: [1, 2, 3, 4, 5, 6],
->>>>>>> 8cc9a64 (fixed merge conflicts)
-=======
-      data: parsedUserScore,
->>>>>>> 46730c7 (fixed conflict)
-      fill: true,
-      backgroundColor: "rgba(255, 99, 132, 0.2)",
-      borderColor: "rgb(255, 99, 132)",
-      pointBackgroundColor: "rgb(255, 99, 132)",
-      pointBorderColor: "#fff",
-      pointHoverBackgroundColor: "#fff",
-      pointHoverBorderColor: "rgb(255, 99, 132)",
-    },
-  ],
+  
+  datasets: dataSetsList,
 };
-const ctx = document.getElementById("myChart");
+
 const config = new Chart(ctx, {
   options: {
     scales: {
