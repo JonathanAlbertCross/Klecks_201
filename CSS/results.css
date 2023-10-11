@@ -113,3 +113,24 @@ canvas {
   max-height: 1000px;
   margin-top: 30px;
 }
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px;
+  background-color: #333;
+  color: #fff;
+  height: 80px;
+  letter-spacing: 1px;
+}
+
+footer a {
+  display: flex;
+  margin: 10px;
+  color: #fff;
+  margin-right: 15px;
+  font-family: lora;
+  font-weight: lighter;
+  text-decoration: none;
+}
