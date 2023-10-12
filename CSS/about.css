@@ -197,7 +197,7 @@ footer a {
   font-family: lora;
   font-weight: lighter;
   text-decoration: none;
-
+}
 main {
   background-image: url("../images/background.jpeg");
   display: flex;
@@ -205,3 +205,10 @@ main {
   align-items: center;
 }
 
+
+iframe {
+  display: flex;
+  justify-content: center;
+  padding: 150px 0px 30px 0px;
+
+}
