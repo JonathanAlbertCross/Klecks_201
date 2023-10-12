@@ -1,5 +1,5 @@
 const parsedUserScore = JSON.parse(localStorage.getItem("userScoreFromLs"));
-const parsedUserName = JSON.parse(localStorage.getItem("newNameFromLs"));
+const parsedUserName = JSON.parse(localStorage.getItem("userNameFromLs"));
 pastCharts = JSON.parse(localStorage.getItem("pastChartsFromLs"));
 pastUsers = JSON.parse(localStorage.getItem("pastUsersFromLs"));
 const ctx = document.getElementById("myChart");
@@ -17,6 +17,7 @@ resetBtn.addEventListener("click", function () {
   localStorage.clear();
   window.location = "./";
 });
+
 for (i = 0; i < pastCharts.length; i++) {
   dataSetsList.push({
     label: pastUsers[i],

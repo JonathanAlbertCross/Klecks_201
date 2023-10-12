@@ -8,7 +8,7 @@ const buttonArea = document.querySelector("#buttonarea");
 const letsGo = document.querySelector("#letsgo");
 let pastCharts = [];
 let pastUsers = [];
-let newName;
+let userName;
 
 // get pastUsers from Localstorage
 if (localStorage.getItem("pastChartsFromLs")) {
@@ -18,7 +18,7 @@ if (localStorage.getItem("pastChartsFromLs")) {
 
 nameForm.addEventListener("submit", function (event) {
   event.preventDefault();
-  newName = document.getElementById("name").value;
+  userName = document.getElementById("name").value;
 
   // set name
   // get messageDiv in HTML
@@ -26,7 +26,7 @@ nameForm.addEventListener("submit", function (event) {
   // set messageDiv text
   messageDiv.textContent =
     "Hi there " +
-    newName +
+    userName +
     "! Welcome to the Klecks app, and thank you for agreeing to take the Rorschach test. The Rorschach test has been a key tool of psychoanalysis since its creation in 1921. It uses inkblot shapes to explore the patient's subconscious through projective associations, revealing what parts of your personality drives you and what parts sabotage you. Adapting the test for the digital age, we have designed it so that more people than ever are able to use this intuitive diagnostic, whilst also gaining more information about personality traits across the largest sample size yet taken by any psychological study. Simply click the button to get started! ";
   // Reset the form
   nameForm.classList.toggle("hidden");
@@ -199,13 +199,13 @@ showResults.addEventListener("click", function () {
 
 function saveToPastCharts() {
   pastCharts.push(userScore);
-  pastUsers.push(newName);
+  pastUsers.push(userName);
 }
 function saveToLocalStorage() {
   const userScoreStringified = JSON.stringify(userScore);
   localStorage.setItem("userScoreFromLs", userScoreStringified);
-  const newNameStringified = JSON.stringify(newName);
-  localStorage.setItem("newNameFromLs", newNameStringified);
+  const userNameStringified = JSON.stringify(userName);
+  localStorage.setItem("userNameFromLs", userNameStringified);
   const pastChartsStringified = JSON.stringify(pastCharts);
   localStorage.setItem("pastChartsFromLs", pastChartsStringified);
   const pastUsersStringified = JSON.stringify(pastUsers);
