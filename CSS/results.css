@@ -34,6 +34,8 @@ footer {
 }
 
 header img {
+  width: 120px;
+  height: auto;
   font-family: lora;
   font-weight: lighter;
 }

@@ -59,10 +59,34 @@ footer {
 }
 
 header img {
-  max-width: 100%;
+  width: 120px;
   height: auto;
   font-family: lora;
   font-weight: lighter;
+}
+
+main img {
+  width: 600px;
+}
+
+h3 {
+  display: inline;
+  font-family: lora;
+  font-weight: 500;
+  color: #333;
+  padding: 40px 220px 0px 220px;
+  line-height: 20px;
+  word-spacing: 5;
+}
+
+p {
+  display: inline;
+  font-family: lora;
+  font-weight: 500;
+  color: #333;
+  padding: 40px 220px 0px 220px;
+  line-height: 20px;
+  word-spacing: 5;
 }
 
 nav ul {
@@ -97,7 +121,7 @@ nav a {
 h2 {
   font-size: 30px;
   display: flex;
-  justify-content: center;
+  text-align: center;
   font-family: lora;
   font-weight: 600;
   padding: 50px 0px 0px 0px;
@@ -130,7 +154,7 @@ button {
   font-family: lora;
   font-weight: 500;
   display: inline-block;
-  margin: 0rem 0rem 0rem 0.5rem;
+  margin: 3rem 0rem 0rem 0.5rem;
   padding: 10px;
 }
 
@@ -171,11 +195,13 @@ input {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
   background-color: #333;
   color: #fff;
+  height: 80px;
+  letter-spacing: 1px;
 }
 
 footer a {
@@ -197,7 +223,7 @@ main {
 iframe {
   display: flex;
   justify-content: center;
-  padding: 50px 0px 30px 0px;
+  padding: 30px 0px 30px 0px;
 }
 
 form {
