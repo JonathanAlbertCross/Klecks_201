@@ -133,7 +133,7 @@ h1 {
   font-size: 100px;
   display: flex;
   justify-content: center;
-  padding: 150px 0px 30px 0px;
+  padding: 50px 0px 30px 0px;
   font-family: lora;
   font-weight: bold;
   color: #333;
@@ -166,6 +166,36 @@ input {
   border-radius: 15px;
   color: #333 !important;
   min-width: 120px;
+  font-size: 18px;
+}
+
+button {
+  border-color: #2196f3;
+  color: rgb(0, 0, 0);
+  border: none;
+  font-family: lora;
+  font-weight: 500;
+  display: inline-block;
+  margin: 0rem 1rem 0rem 1rem;
+  padding: 10px 30px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #2196f3 !important;
+  color: white !important;
+}
+
+.functionbutton {
+  background-color: #2196f3 !important;
+  color: white !important;
+  border-color: white !important;
+}
+
+.functionbutton:hover {
+  background-color: white !important;
+  color: #2196f3 !important;
+  border-color: #2196f3 !important;
 }
 
 main {

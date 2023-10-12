@@ -67,13 +67,8 @@ main {
   z-index: auto;
 }
 
-h1 {
-  font-size: 100px;
-  display: flex;
-  justify-content: center;
-  padding: 150px 0px 30px 0px;
-  font-family: lora;
-  font-weight: bold;
+#buttons {
+  margin-top: 50px;
 }
 
 .subheading {
@@ -91,16 +86,6 @@ h2 {
   font-weight: 600;
   padding: 100px 0px 0px 0px;
   margin-bottom: 30px;
-}
-
-button {
-  border-color: #2196f3;
-  color: dodgerblue;
-  border: none;
-  font-family: lora;
-  font-weight: 500;
-  display: inline-block;
-  padding: 10px;
 }
 
 button:hover {

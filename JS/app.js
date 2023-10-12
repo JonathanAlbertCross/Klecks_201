@@ -41,6 +41,7 @@ letsGo.addEventListener("click", function () {
   window.location = "#inkblotarea";
   headlinesDiv.style.visibility = "hidden";
   headlinesDiv.style.maxHeight = "50px";
+  headlinesDiv.style.padding = "20px";
 });
 
 // empty userScore and blotList for first round
@@ -193,7 +194,7 @@ const showResults = document.querySelector("#showResults");
 showResults.addEventListener("click", function () {
   saveToPastCharts();
   saveToLocalStorage();
-  window.location = "./results.html#nodata";
+  window.location = "./results.html";
 });
 
 function saveToPastCharts() {
