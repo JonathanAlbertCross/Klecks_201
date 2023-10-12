@@ -68,7 +68,7 @@ footer {
 }
 
 header img {
-  max-width: 100%;
+  width: 120px;
   height: auto;
   font-family: lora;
   font-weight: lighter;
