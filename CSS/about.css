@@ -110,16 +110,6 @@ nav a {
   font-weight: lighter;
 }
 
-h1 {
-  font-size: 100px;
-  display: flex;
-  justify-content: center;
-  padding: 150px 0px 30px 0px;
-  font-family: lora;
-  font-weight: bold;
-  color: #333;
-}
-
 .subheading {
   display: flex;
   justify-content: center;
@@ -233,5 +223,24 @@ main {
 iframe {
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
   padding: 30px 0px 30px 0px;
+=======
+  padding: 50px 0px 30px 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label,
+input,
+textarea {
+  margin-bottom: 10px;
+}
+
+#contactinfo address p {
+  margin: 5px 0;
+>>>>>>> 4509b767027b74f01589f4d3819ef70017f6db1b
 }
