@@ -223,10 +223,7 @@ main {
 iframe {
   display: flex;
   justify-content: center;
-<<<<<<< HEAD
   padding: 30px 0px 30px 0px;
-=======
-  padding: 50px 0px 30px 0px;
 }
 
 form {
@@ -242,5 +239,4 @@ textarea {
 
 #contactinfo address p {
   margin: 5px 0;
->>>>>>> 4509b767027b74f01589f4d3819ef70017f6db1b
 }
